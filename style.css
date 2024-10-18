@@ -4,3 +4,33 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
+section {
+    position: relative;
+    min-height: 100vh;    
+    width: 100%;
+    background: #121321;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    transform: translate(-150px, 100px);
+    background: linear-gradient(90deg, #27b05c, #f3f5f5);
+}
+
+section::after {
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    transform: translate(150px, -100px);
+    background: linear-gradient(90deg, #27b05c, #f3f5f5);
+}
